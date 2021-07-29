@@ -42,4 +42,4 @@ function CampsiteInfo(props) {
     return <div />;
 };
 
-export default CampsiteInfoComponent;
+export default CampsiteInfo;
