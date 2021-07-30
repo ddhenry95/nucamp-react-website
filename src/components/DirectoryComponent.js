@@ -4,10 +4,12 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 function RenderDirectoryItem({campsite}) {
     return (
         <Card>
-            <CardImg width="100%" src={campsite.image} alt={campsite.name} />
-            <CardImgOverlay>
-                <CardTitle>{campsite.name}</CardTitle>
-            </CardImgOverlay>
+            <Link to={`/directory/${campsite.id}`}>
+                <CardImg width="100%" src={campsite.image} alt={campsite.name} />
+                <CardImgOverlay>
+                    <CardTitle>{campsite.name}</CardTitle>
+                </CardImgOverlay>
+            </Link>
         </Card>
     );
 }
