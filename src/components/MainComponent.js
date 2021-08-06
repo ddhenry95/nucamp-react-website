@@ -6,8 +6,10 @@ import Home from './HomeComponent';
 import Directory from './DirectoryComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+
+
 
 const mapStateToProps = state => {
     return {
